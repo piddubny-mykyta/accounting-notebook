@@ -1,0 +1,9 @@
+.debit {
+  color: var(--success);
+  font-weight: bold;
+}
+
+.credit {
+  color: var(--danger);
+  font-weight: bold;
+}
