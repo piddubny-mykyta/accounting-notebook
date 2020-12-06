@@ -13,7 +13,10 @@ app.use('/api/account', accountRoutes);
 const errorHandler = require('./middleware/error-handler');
 app.use(errorHandler);
 
-// Start
-app.listen(port, () => {
-  console.log(`Listening at http://localhost:${port}`);
-});
+if (!module.parent) {
+  app.listen(port, () => {
+    console.log(`Listening at http://localhost:${port}`);
+  });
+}
+
+module.exports = app;

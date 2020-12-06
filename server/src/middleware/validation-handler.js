@@ -8,5 +8,5 @@ module.exports = (schema) => (req, res, next) => {
         return next();
     }
 
-    next(result.error.details);
+    res.status(400).json({ validation: result.error.details });
 };
