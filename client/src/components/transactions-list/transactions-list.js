@@ -14,10 +14,14 @@ class TransactionsList extends React.Component {
   }
 
   async componentDidMount() {
-    const transactions = await transactionService.getAll();
+    const transactions = await this.loadTransactions();
     this.setState({
       transactions
     });
+  }
+
+  async loadTransactions() {
+    return await transactionService.getAll();
   }
 
   render() {

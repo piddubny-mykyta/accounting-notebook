@@ -7,7 +7,7 @@ function TransactionDetails(props) {
     <div>Id: {transaction.id}</div>
     <div>Type: {<TransactionType type={transaction.type} />}</div>
     <div>Amount: {transaction.amount}</div>
-    <div>Effective Date: {format(transaction.effectiveDate, 'dd/mm/yyyy HH:MM:ss')}</div>
+    <div>Effective Date: {format(transaction.effectiveDate, 'dd/MM/yyyy HH:mm:ss')}</div>
   </div>
 }
 
