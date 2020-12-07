@@ -1,6 +1,6 @@
 # Environment requirements
 
-System should have node and npm installed.
+System should have node (version 11 or higher) and npm installed.
 
 # Launch Server
 
